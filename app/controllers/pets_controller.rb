@@ -9,8 +9,6 @@ class PetsController < ApplicationController
     @owners = Owner.all
     erb :'/pets/new'
   end
-    erb :'/pets/new'
-  end
 
   post '/pets' do 
     @pet = Pet.create(params[:pet])
